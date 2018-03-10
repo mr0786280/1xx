@@ -11,3 +11,9 @@ inside out project version 100.1
 	
 inside out project version 100.2
 	-fix the footer by adjusting the bootstrap column widths wrap inside a bootstrap row
+	
+inside out project version 101.0
+	- added first layer of navigation
+	- created assets/js/app.js
+	- created assets/data/menu.json
+	- moved header resize js to app.js 
