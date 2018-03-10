@@ -8,3 +8,6 @@ inside out project version 100.0
 inside out project version 100.1
 	- added footer resize functionality
 	- added jQuery, teather and popper
+	
+inside out project version 100.2
+	-fix the footer by adjusting the bootstrap column widths wrap inside a bootstrap row
