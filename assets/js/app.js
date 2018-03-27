@@ -1,5 +1,6 @@
 // JavaScript Document
    
+    window.onload = init();
 
 	function init() {
 		"use strict";
@@ -43,9 +44,16 @@
 				}
 			});
 		
-		
-		
-		
-		
-        }
-        window.onload = init();
+ }
+ 
+
+ function menuBuilder(obj) {
+	 var theMenu = '';
+	 if (obj.length > 0) {
+		 
+		 
+		 
+	 }
+ }
+
+
