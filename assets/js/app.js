@@ -21,20 +21,25 @@
 				method:'GET',
 				url:'assets/data/menu.json',
 				dataType:'json',
-				success: function(data){
-					console.log('all was good');
-					console.log(data.menu.length);
-                    console.log(data.menu);
+				success: function(data) {
+					console.log('calling the menuBuilder function');
+					var menu = menuBuilder(data.menu);
+					console.log('menuBuilder function complete');
+				
+					{
+					//console.log('all was good');
+					//console.log(data.menu.length);
+                    //console.log(data.menu);
 					
-					if(data.menu.length > 0){
-						data.menu.forEach(function(data){
+					//if(data.menu.length > 0){
+						//data.menu.forEach(function(data){
                             
-                            console.log(data);
+                            //console.log(data);
 							//$('nav').append('<a href="love.html">love</a>');							
-							$('nav').append('<a href="'+data.MenuLink+'">'+data.MenuName+'</a>');
+							//$('nav').append('<a href="'+data.MenuLink+'">'+data.MenuName+'</a>');
 							//$('nav').append("<a href='"+item.MenuLink+"'>"+item.MenuName+"</a>");
 							
-						});
+						//});
 						
 						
 					}
@@ -44,16 +49,20 @@
 				}
 			});
 		
+		
  }
  
 
  function menuBuilder(obj) {
 	 var theMenu = '';
 	 if (obj.length > 0) {
+		console.log(obj);
+	 }else{
 		 
-		 
-		 
+		 console.log('no data');
 	 }
+	 
+	 console.log('menuBuilder function complete');
  }
 
 
