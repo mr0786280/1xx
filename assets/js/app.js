@@ -3,7 +3,7 @@
     window.onload = init();
 
 	function init() {
-		"use strict";
+		
             window.addEventListener('scroll', function(e) {
                 var distanceY = window.pageYOffset || document.documentElement.scrollTop,
                     shrinkOn = 300,
@@ -58,7 +58,7 @@
 		
 		});
 		
-		 theMenu = theMenu + '<ul>';
+		 theMenu = theMenu + '</ul>';
 		
 	 }else{
 		 
