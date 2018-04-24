@@ -28,3 +28,9 @@ inside out project version 102.1
 inside out project version 103.0 (accidentally called 103-3 in github :c)
     - fixed enlarging navigation on header shrink
 	- added loader to application with gears
+inside out project version 104.0
+	-  modified the ajax call to get the JSON for the menu from the me.catchthesehands.net site
+	- modified the menuBuilder function to accept the JSON data from Wordpress REST API
+	- removed data/menu.json from file system considering is it no longer needed
+	
+	
