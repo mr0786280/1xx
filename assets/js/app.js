@@ -19,17 +19,22 @@
 		
 			$.ajax({
 				method:'GET',
-				url:'assets/data/menu.json',
+				url:'https://me.catchthesehands.net/wp-json/wp-api-menus/v2/menus/3',
 				dataType:'json',
 				success: function(data) {
 					
-					var menu = menuBuilder(data.menu);
+					$('nav').hide();
 					
-					$('nav').append(menu);
+					var menu = menuBuilder(data.items);
+					
+					
+					$('nav').html (menu).slideDown();
+
 					$("#loaderDiv").fadeOut("slow");
-					
+					                                  
 				},
 				error: function(){
+					
 					console.log('all was not good');
 				}
 			});
@@ -46,13 +51,13 @@
 		 
 		 theMenu = theMenu + '<ul>';
 		 
-		 obj.forEach(function (item){
+		 obj.forEach(function (item) {
 			 
-			 theMenu = theMenu + '<li><a href="#">' + item.MenuName + '</a>';
+			 theMenu = theMenu + '<li><a href="#">' + item.title + '</a>';
 			
-			if(item.Menus.length > 0) {
+			if(item.children) {
 				
-				theMenu = theMenu + menuBuilder(item.Menus);
+				theMenu = theMenu + menuBuilder(item.children);
 			}
 			 
 		theMenu = theMenu + '</li>';
