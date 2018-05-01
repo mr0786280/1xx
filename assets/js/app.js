@@ -82,7 +82,7 @@
 				$("#loaderDiv").fadeIn("slow");
 				$.ajax({
 					method: 'GET',
-					url: 'http://me.catchthesehands.net/wp-json/wp/v2/pages/' + obj,
+					url: 'https://me.catchthesehands.net/wp-json/wp/v2/pages/' + obj,
 					dataType: 'json',
 					success: function(data) {
 						var pgbuild = '';
